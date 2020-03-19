@@ -1,0 +1,35 @@
+<div class="flex justify-center">
+    <div class="text-center max-w-md p-8 mt-4">
+        <h1 class="font-serif text-gray-900 text-4xl">{{ title }}</h1>
+        <p class="text-sm text-gray-500 uppercase font-mono">Written by {{ author.name }} &middot; {{ publish_date format="m/d/Y" }}</p>
+    </div>
+</div>
+
+<div class="flex justify-center font-mono">
+
+    <article class="w-full text-gray-900 max-w-3xl p-8">
+        {{ article_body }}
+
+            {{ if type == "text" }}
+                {{ text }}
+            {{ elseif type == "php_code" }}
+                <div class="my-4">
+                    <pre class="rounded bg-gray-100 my-4 p-4 overflow-scroll shadow-inner"><code>{{ code|noparse }}</code></pre>
+                </div>
+            {{ elseif type == "quote" }}
+                <div class="bg-white my-4 shadow rounded-r-lg border-l-8 border-blue-500 p-8 font-mono">
+                    <p class="text-2xl font-bold">{{ quote }}</p>
+                    <p class="text-blue-500 font-serif text-lg mt-4">- {{ author }}</p>
+                </div>
+            {{ elseif type == "photo" }}
+                <div class="my-4 bg-white shadow rounded font-mono font-bold p-6">
+                    <img class="shadow-md rounded" alt="{{ caption }}" src="{{ photo }}">
+                    <p class="text-center text-xl font-handwritten px-2 mt-10 mb-2">{{ caption }}</p>
+                </div>
+            {{ /if }}
+
+        {{ /article_body }}
+
+    </article>
+
+</div>

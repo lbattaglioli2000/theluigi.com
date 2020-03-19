@@ -1,0 +1,168 @@
+title: Periodical
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          input_type: text
+          type: text
+          instructions: 'give er'' a good title'
+          localizable: false
+          listable: true
+          display: Title
+      -
+        handle: publish_date
+        field:
+          mode: single
+          time_enabled: false
+          time_required: false
+          earliest_date: '1900-01-01'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
+          type: date
+          localizable: false
+          width: 50
+          listable: true
+          display: 'Publish Date'
+      -
+        handle: author
+        field:
+          max_items: 1
+          mode: typeahead
+          type: users
+          localizable: false
+          width: 50
+          listable: hidden
+          display: Author
+      -
+        handle: summary
+        field:
+          type: textarea
+          localizable: false
+          width: 50
+          listable: true
+          display: Summary
+      -
+        handle: article_photo
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          instructions: 'Give the article an eye catching photo.'
+          localizable: false
+          listable: true
+          display: 'Article Photo'
+          width: 50
+      -
+        handle: article_body
+        field:
+          buttons:
+            - h1
+            - h2
+            - h3
+            - h4
+            - h5
+            - h6
+            - bold
+            - italic
+            - underline
+            - strikethrough
+            - unorderedlist
+            - orderedlist
+            - removeformat
+            - anchor
+            - image
+            - table
+            - code
+          save_html: false
+          toolbar_mode: fixed
+          link_noopener: false
+          link_noreferrer: false
+          target_blank: false
+          reading_time: true
+          fullscreen: true
+          allow_source: true
+          type: bard
+          localizable: false
+          listable: true
+          display: Content
+          sets:
+            playlist:
+              display: Playlist
+              fields:
+                -
+                  handle: playlist_embed_code
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    type: markdown
+                    instructions: 'Add your playlist iFrame embed code.'
+                    localizable: false
+                    listable: true
+                    display: 'Playlist Embed Code'
+            quote:
+              display: Quote
+              fields:
+                -
+                  handle: quote
+                  field:
+                    type: textarea
+                    localizable: false
+                    listable: hidden
+                    display: Quote
+                -
+                  handle: author
+                  field:
+                    input_type: text
+                    type: text
+                    localizable: false
+                    listable: hidden
+                    display: Author
+            php_code:
+              display: 'PHP Code'
+              fields:
+                -
+                  handle: code
+                  field:
+                    theme: material
+                    mode: php
+                    indent_type: tabs
+                    indent_size: 4
+                    line_numbers: true
+                    line_wrapping: true
+                    key_map: default
+                    type: code
+                    localizable: false
+                    listable: hidden
+                    display: Code
+            photo:
+              display: Photo
+              fields:
+                -
+                  handle: photo
+                  field:
+                    mode: grid
+                    restrict: false
+                    allow_uploads: true
+                    max_files: 1
+                    type: assets
+                    localizable: false
+                    listable: hidden
+                    display: Photo
+                -
+                  handle: caption
+                  field:
+                    input_type: text
+                    type: text
+                    localizable: false
+                    listable: hidden
+                    display: Caption

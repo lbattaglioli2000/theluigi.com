@@ -1,0 +1,11 @@
+title: Periodicals
+route: 'periodicals/{slug}'
+amp: true
+template: periodicals/show
+layout: layouts/master
+blueprints:
+  - periodical
+revisions: false
+date_behavior:
+  past: public
+  future: private

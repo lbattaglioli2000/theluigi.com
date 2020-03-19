@@ -1,0 +1,78 @@
+<div class="flex justify-center">
+    <div class="text-center p-8 mt-4">
+        <h1 class="font-serif text-gray-900 text-4xl">Let's Chat</h1>
+        <p class="font-mono text-gray-700 max-w-md">Something on your mind? Wanna talk about it? Feel free to hit me up.</p>
+    </div>
+</div>
+
+<div class="flex justify-center">
+
+    <div class="max-w-xl">
+        {{ form:contact_me }}
+
+            {{ if errors }}
+                <div class="bg-red-100 mb-6 rounded text-red-500 border-red-500 border-2 p-4">
+
+                    <h1 class="text-3xl font-serif">Oh-nose! <span class="px-2">👃🏼</span></h1>
+                    <p class="font-mono">Something went wonky behind the scenes. See below for what went wrong!</p>
+
+                </div>
+            {{ /if }}
+
+            {{ if success }}
+                <div class="bg-green-100 mb-6 rounded text-green-500 border-green-500 border-2 p-4">
+                    <h1 class="text-3xl font-serif">Groovy Baby! <span class="px-2">🎉</span></h1>
+                    <p class="font-mono">The form was submitted successfully! I'll get back to ya in a jiffy!</p>
+                </div>
+            {{ /if }}
+
+            {{ fields }}
+
+                    {{ if field.type == "text" }}
+
+                        <div class="pt-2">
+                            <label class="font-mono text-gray-700">{{ display }}</label>
+                            <input placeholder="{{ field.placeholder }}" class="w-full font-mono text-gray-900 my-2 block bg-white rounded outline-none focus:shadow-outline shadow px-3 py-2" type="{{ field.input_type }}" name="{{ handle }}">
+                            {{ if error }}
+                                <p class="text-red-500 mt-1 font-bold font-mono">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+
+                        {{ if field.instructions }}
+                            <p class="font-mono text-xs text-gray-700">
+                                {{ field.instructions }}
+                            </p>
+                        {{ /if }}
+
+                    {{ /if }}
+
+                    {{ if field.type == "textarea" }}
+
+                        <div class="mt-4">
+                            <label class="font-mono text-gray-700">{{ display }}</label>
+                            <textarea rows="5" placeholder="Is the 'S' or the 'C' silent in scent..?" class="font-mono text-gray-900 w-full my-2 block bg-white rounded shadow px-3 py-2 outline-none focus:shadow-outline" name="{{ handle }}"></textarea>
+                            {{ if error }}
+                                <p class="text-red-500 mt-1 font-bold font-mono">{{ error }}</p>
+                            {{ /if }}
+                        </div>
+
+                        {{ if field.instructions }}
+                        <p class="font-mono text-xs text-gray-700">
+                            {{ field.instructions }}
+                        </p>
+                        {{ /if }}
+
+                    {{ /if }}
+
+            {{ /fields }}
+
+            <input type="text" name="honeypot" class="honeypot" />
+
+            <div class="mt-6">
+                <button class="font-serif mt-2 inline-block hover:bg-blue-700 bg-blue-500 rounded-sm px-8 py-3 shadow text-white text-xl">Send it!</button>
+            </div>
+
+        {{ /form:contact_me }}
+    </div>
+
+</div>

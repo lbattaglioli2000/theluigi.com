@@ -1,0 +1,34 @@
+title: 'Contact Submission'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: what_s_your_name_friend
+        field:
+          placeholder: 'Louie B.'
+          input_type: text
+          type: text
+          localizable: false
+          listable: true
+          display: 'What''s your name, friend?'
+          validate: required
+      -
+        handle: what_s_your_email
+        field:
+          placeholder: him@theluigi.com
+          input_type: email
+          type: text
+          instructions: 'Don''t worry, I only ask for this so I can get back to you. I''ll never spam you or sell your info because I hate when people do that to me.'
+          localizable: false
+          listable: true
+          display: 'What''s your email?'
+          validate: email|required
+      -
+        handle: what_d_you_wanna_talk_about
+        field:
+          type: textarea
+          localizable: false
+          listable: true
+          display: 'What''d you wanna talk about?'
+          validate: required
