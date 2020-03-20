@@ -8,13 +8,7 @@ article_body:
     content:
       -
         type: text
-        text: 'It''s been quite some time since I''ve last written anything on here, so this one will be chock full of goodies.'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Life has been quite crazy lately. I go to school full time, I recently got hired at Apple, and I still work at the restaurant, '
+        text: 'It''s been quite some time since I''ve last written anything on here, so this one will be chock full of goodies. Life has been quite crazy lately. I go to school full time, I recently got hired at Apple so I''ve been training there, and I still work at '
       -
         type: text
         marks:
@@ -27,7 +21,13 @@ article_body:
         text: 'Stella Pasta Bar'
       -
         type: text
-        text: '. On top of that I was working on my friend Nick''s website for '
+        text: '. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'On top of all of that, I just finished working on my friend Nick''s website for '
       -
         type: text
         marks:
@@ -73,7 +73,7 @@ article_body:
         type: text
         text: 'redesign my whole website. If you''ve '
 updated_by: 1
-updated_at: 1584680957
+updated_at: 1584681050
 id: 5faa9b13-e2de-41d7-ab3e-0c2a00fb6a72
 published: false
 ---
