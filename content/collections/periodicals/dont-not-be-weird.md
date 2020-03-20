@@ -42,6 +42,6 @@ article_body:
         type: text
         text: 'I truly don''t care if you think my cat shirts are weird, I like cats and I like them on my shirts, and that''s all that matters.'
 updated_by: 1
-updated_at: 1584660919
+updated_at: 1584669760
 id: dc535937-da85-4bd2-ba69-9db2877863b3
 ---
