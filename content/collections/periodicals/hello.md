@@ -8,7 +8,7 @@ article_body:
     content:
       -
         type: text
-        text: 'It''s been quite some time since I''ve last written anything on here. '
+        text: 'It''s been quite some time since I''ve last written anything on here, so this one will be chock full of goodies.'
   -
     type: paragraph
     content:
@@ -40,22 +40,19 @@ article_body:
         text: 'The Chocolate Milk Mike.'
       -
         type: text
-        text: ' The Chocolate Milk Mile is an event that he''s putting on to celebrate the life of Noah Farrelly, who loved running but unfortunately was struck and killed by a car while running. The site looks pretty simple, but there''s some cool stuff goin'' on behind the scene. Stay tuned for a '
+        text: ' The Chocolate Milk Mile is an event that he''s putting on to celebrate the life of Noah Farrelly, who loved running but unfortunately was struck and killed by a car while running. The site looks pretty simple, but there''s some cool stuff goin'' on behind the scene. '
       -
         type: text
         marks:
           -
             type: bold
-        text: 'technical post'
-      -
-        type: text
-        text: ' talking about that site''s inner-workings.'
+        text: 'Stay tuned for a technical post talking about that site''s inner-workings.'
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'As part of my service learning requirement for school, I''ve also been working with The RED Bookshelf, which is a non-profit organization devoted to providing free children’s books to kids throughout Albany. Their goal is to ensure that all children, regardless of income, have access to books. I''m offering my web development skills to them to improve their web presence. Right now, '
+        text: 'As part of the service learning requirement for my economics class, I''ve also been working with The RED Bookshelf, which is a non-profit organization devoted to providing free children’s books to kids throughout Albany. Their goal is to ensure that all children, regardless of income, have access to books. I''m offering my web development skills to help them improve their web presence. Right now, '
       -
         type: text
         marks:
@@ -68,7 +65,7 @@ article_body:
         text: 'their site'
       -
         type: text
-        text: ' is rather bland.'
+        text: ' is rather bland. I want to help give it a little pop!'
   -
     type: paragraph
     content:
@@ -76,7 +73,7 @@ article_body:
         type: text
         text: 'redesign my whole website. If you''ve '
 updated_by: 1
-updated_at: 1584680691
+updated_at: 1584680957
 id: 5faa9b13-e2de-41d7-ab3e-0c2a00fb6a72
 published: false
 ---
