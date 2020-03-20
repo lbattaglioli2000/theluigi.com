@@ -1,5 +1,5 @@
 title: Images
-disk: public
+disk: local
 allow_uploads: true
 allow_downloading: true
 allow_renaming: true
