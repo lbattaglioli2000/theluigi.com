@@ -20,7 +20,7 @@ Route::get('/', function () {
         ->with(['title' => 'Welcome!']);
 });
 
-Route::statamic('/periodicals', 'periodicals.index', ['layout' => 'layouts.master']);
+Route::statamic('/periodicals', 'periodicals.index', ['layout' => 'layouts.master', 'title'=> 'The Periodicals']);
 
 Route::get('/contact', function () {
     return (new Statamic\View\View)

@@ -12,10 +12,14 @@
         {{ collection from="periodicals" }}
             <div class="mx-auto">
                 <a href="/periodicals/{{ slug }}">
-                    <div class="hover:shadow-lg rounded mt-4 bg-white max-w-xl rounded-sm shadow">
+                    <div class="hover:shadow-lg rounded my-6 bg-white max-w-xl rounded-sm shadow">
 
                         <div class="w-full">
-                            <img class="h-64 object-center object-cover rounded-t w-full" src="{{ article_photo }}" alt="">
+
+                            {{ glide:article_photo }}
+                                <img class="h-64 object-center object-cover rounded-t w-full" src="{{ url }}" alt="">
+                            {{ /glide:article_photo }}
+
                             <div class="p-4 mt-4">
                                 <h2 class="font-serif text-2xl">{{ title }}</h2>
                                 <p class="text-sm text-gray-500 uppercase font-mono">{{ author.name }} &middot; {{ publish_date format="m/d/Y" }}</p>

@@ -23,7 +23,9 @@
                 </div>
             {{ elseif type == "photo" }}
                 <div class="my-4 bg-white shadow rounded font-mono font-bold p-6">
-                    <img class="shadow-md rounded" alt="{{ caption }}" src="{{ photo }}">
+                    {{ glide:photo }}
+                    <img class="shadow-md rounded" alt="{{ caption }}" src="{{ url }}">
+                    {{ /glide:photo }}
                     <p class="text-center text-xl font-handwritten px-2 mt-10 mb-2">{{ caption }}</p>
                 </div>
             {{ /if }}
