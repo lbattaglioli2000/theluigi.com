@@ -69,6 +69,16 @@ article > h1 {
   @apply text-4xl my-4;
 }
 
+article > h2 {
+  font-family: Lust;
+  @apply text-3xl my-4;
+}
+
+article > h3 {
+  font-family: Lust;
+  @apply text-2xl my-4;
+}
+
 article > p {
   @apply text-base my-4;
 }

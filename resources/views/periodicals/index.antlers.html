@@ -9,7 +9,7 @@
 
     {{ if {collection:count from="periodicals"} > 0 }}
 
-        {{ collection from="periodicals" }}
+        {{ collection from="periodicals" sort="date:desc" }}
             <div class="mx-auto">
                 <a href="/periodicals/{{ slug }}">
                     <div class="hover:shadow-lg rounded my-6 bg-white max-w-xl rounded-sm shadow">
