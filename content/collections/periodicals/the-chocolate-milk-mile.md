@@ -3,7 +3,6 @@ title: 'The Chocolate Milk Mile'
 publish_date: '2020-03-20 16:13'
 author: 1
 summary: 'I recently built a web application to handle event registration for The Chocolate Milk Mile. Join me in uncovering the inner-workings of this application.'
-article_photo: CMM-PROMO.jpg
 article_body:
   -
     type: heading
@@ -721,6 +720,7 @@ article_body:
               }
               throw new AlreadyCheckedInException();
           }
+          
   -
     type: paragraph
   -
@@ -807,6 +807,7 @@ article_body:
               this.getRegistrations();
               this.listen();
           },
+          
   -
     type: paragraph
     content:
@@ -875,6 +876,7 @@ article_body:
         type: text
         text: ' learn anything, maybe this article will help to demystify the codebase for you. 😆'
 updated_by: 1
-updated_at: 1584756679
+updated_at: 1584757781
+article_photo: puke.png
 id: c701f323-2042-4d89-991f-2f653834920d
 ---
