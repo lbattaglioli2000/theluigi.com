@@ -571,7 +571,7 @@ article_body:
     content:
       -
         type: text
-        text: 'The QR code encodes the confirmation number associated with the registration. This allows the event managers to simply scan the code to access the registrant''s information within the system. Let''s talk about how that works next.'
+        text: 'The QR code encodes the confirmation number associated with the registration. This allows the event managers who are checking people in, to simply scan the code to access the registrant''s information within the system.'
   -
     type: paragraph
     content:
@@ -591,11 +591,15 @@ article_body:
         type: text
         marks:
           -
-            type: code
-        text: '@chenfengyuan/vue-qrcode'
+            type: link
+            attrs:
+              href: 'https://github.com/fengyuanchen/vue-qrcode'
+              target: _blank
+              rel: null
+        text: 'this cool library'
       -
         type: text
-        text: '. This component detects when there''s a QR code within the view of the webcam. When it detects one, it will call the '
+        text: ' I stumbled upon on GitHub. This component detects when there''s a QR code within the view of the webcam. When it detects one, it''ll call the '
       -
         type: text
         marks:
@@ -847,7 +851,30 @@ article_body:
       -
         type: text
         text: ' again, and refresh our registration information.'
+  -
+    type: heading
+    attrs:
+      level: 1
+    content:
+      -
+        type: text
+        text: 'You''re still here?!'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Wow. I applaud your commitment, and I appreciate you taking the time to read this. I hope you found it as interesting as I did. I had a blast building this with my good friend Nick, and if you''re reading this, I hope you learned a little something too. And on the off chance you '
+      -
+        type: text
+        marks:
+          -
+            type: bold
+        text: 'didn''t'
+      -
+        type: text
+        text: ' learn anything, maybe this article will help to demystify the codebase for you. 😆'
 updated_by: 1
-updated_at: 1584755447
+updated_at: 1584756489
 id: c701f323-2042-4d89-991f-2f653834920d
 ---
