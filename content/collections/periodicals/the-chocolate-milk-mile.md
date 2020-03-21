@@ -912,7 +912,7 @@ article_body:
         type: text
         text: ' learn anything, maybe this article will help to demystify the codebase for you. 😆'
 updated_by: 1
-updated_at: 1584814619
+updated_at: 1584814627
 article_photo: puke.png
 id: c701f323-2042-4d89-991f-2f653834920d
 ---
