@@ -7,7 +7,7 @@
 
 <div class="flex justify-center font-mono">
 
-    <article class="w-full text-gray-900 max-w-3xl p-8">
+    <article class="w-full text-gray-900 max-w-3xl">
         {{ article_body }}
 
             {{ if type == "text" }}
@@ -17,17 +17,34 @@
                     <pre class="rounded bg-gray-100 my-4 p-4 overflow-scroll shadow-inner"><code>{{ code|noparse }}</code></pre>
                 </div>
             {{ elseif type == "quote" }}
-                <div class="bg-white my-4 shadow rounded-r-lg border-l-8 border-blue-500 p-8 font-mono">
-                    <p class="text-2xl font-bold">{{ quote }}</p>
-                    <p class="text-blue-500 font-serif text-lg mt-4">- {{ author }}</p>
-                </div>
+                <blockquote class="bg-white my-4 shadow rounded-r-lg border-l-8 border-blue-500 p-8 font-light font-mono" cite="{{ cite }}">
+                    {{ quote }}
+                    <footer class="text-blue-500 font-serif text-lg mt-4">— {{ author }}, <cite>{{ source }}</cite></footer>
+                </blockquote>
             {{ elseif type == "photo" }}
                 <div class="my-4 bg-white shadow rounded font-mono font-bold p-6">
                     {{ glide:photo }}
-                    <img class="shadow-md rounded" alt="{{ caption }}" src="{{ url }}">
+                    <img class="rounded" alt="{{ caption }}" src="{{ url }}">
                     {{ /glide:photo }}
                     <p class="text-center text-xl font-handwritten px-2 mt-10 mb-2">{{ caption }}</p>
                 </div>
+            {{ elseif type == "attention_box" }}
+
+                {{ if alert_type == "nerd_alert"}}
+                    <div class="shadow relative bg-yellow-100 rounded border-2 border-yellow-500 text-yellow-500 p-6">
+                        <span class="absolute top-0 right-0 -mt-8 -mr-6 text-6xl">🤓</span>
+                        <h1 class="font-serif text-yellow-600 text-3xl">Nerd Alert!</h1>
+                        <p class="text-lg">{{ message }}</p>
+                    </div>
+                {{ /if }}
+
+                {{ if alert_type == "info_alert"}}
+                <div class="bg-blue-100 rounded border-2 border-blue-500 text-blue-500 p-6">
+                    <h1 class="font-serif text-blue-600 text-3xl">Just so ya know...</h1>
+                    <p class="text-lg">{{ message }}</p>
+                </div>
+                {{ /if }}
+
             {{ /if }}
 
         {{ /article_body }}

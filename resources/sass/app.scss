@@ -63,6 +63,17 @@
   transform: rotate(-5deg);
 }
 
+article > p > a {
+  @apply text-blue-500 font-bold;
+}
+
+article > p > a:hover {
+  @apply underline;
+}
+
+article > blockquote > p {
+  @apply mb-2;
+}
 
 article > h1 {
   font-family: Lust;
@@ -81,4 +92,18 @@ article > h3 {
 
 article > p {
   @apply text-base my-4;
+}
+
+article > p > code {
+  font-family: 'Fira Code';
+  @apply px-1 leading-loose py-1 bg-gray-100 border-gray-300 border-r-2 border-b-2 rounded text-xs;
+}
+
+article > pre {
+  font-family: 'Fira Code';
+  @apply my-4 bg-white border-2 border-gray-800 leading-loose rounded p-6 text-gray-800 overflow-scroll;
+}
+
+article > pre > code {
+  font-family: 'Fira Code';
 }

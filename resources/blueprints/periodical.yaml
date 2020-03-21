@@ -115,7 +115,12 @@ sections:
                 -
                   handle: quote
                   field:
-                    type: textarea
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    type: markdown
                     localizable: false
                     listable: hidden
                     display: Quote
@@ -127,6 +132,24 @@ sections:
                     localizable: false
                     listable: hidden
                     display: Author
+                -
+                  handle: cite
+                  field:
+                    input_type: text
+                    type: text
+                    instructions: 'Did this come from a website? Add that URL here.'
+                    localizable: false
+                    listable: hidden
+                    display: Cite
+                -
+                  handle: source
+                  field:
+                    input_type: text
+                    type: text
+                    instructions: 'What was the name of the source?'
+                    localizable: false
+                    listable: hidden
+                    display: Source
             php_code:
               display: 'PHP Code'
               fields:
@@ -166,3 +189,34 @@ sections:
                     localizable: false
                     listable: hidden
                     display: Caption
+            attention_box:
+              display: 'Attention Box'
+              fields:
+                -
+                  handle: alert_type
+                  field:
+                    options:
+                      nerd_alert: 'Nerd Alert'
+                      info_alert: 'Info Alert'
+                    clearable: false
+                    multiple: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    type: select
+                    localizable: false
+                    listable: hidden
+                    display: 'Alert Type'
+                -
+                  handle: message
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    type: markdown
+                    localizable: false
+                    listable: hidden
+                    display: 'Alert Message'

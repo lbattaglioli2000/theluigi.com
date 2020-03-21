@@ -60,6 +60,8 @@ article_body:
         type: quote
         quote: 'limit in over path only, under path compound for two statements,'
         author: 'William Whollober'
+        cite: null
+        source: 'My Java Professor'
   -
     type: paragraph
     content:
@@ -119,6 +121,6 @@ article_body:
         type: text
         text: 'Oh what a pickle I am in.'
 updated_by: 1
-updated_at: 1584659090
+updated_at: 1584721732
 id: 248d6f00-f25e-41c5-88dc-4cda530fc1f5
 ---
