@@ -70,7 +70,7 @@ article_body:
       values:
         type: attention_box
         alert_type: nerd_alert
-        message: 'I''m gonna nerd out for a bit and talk about how this application works. We''re gonna talk about stuff like real-time event broadcasting, web sockets, and there will be a hefty ammount of code. If that''s not your thing, no offense taken. It''s definitely an accquired taste. Come back later for more stuff that might be more up your alley. I still love you. 😘'
+        message: 'I''m gonna nerd out for a bit and talk about how this application works. There will be a hefty ammount of code. If that''s not your thing, no offense taken. It''s definitely an accquired taste. Come back later for more stuff that might be more up your alley. I still love you. 😘'
   -
     type: paragraph
     content:
@@ -446,6 +446,7 @@ article_body:
           
               }
           }
+          
   -
     type: paragraph
     content:
@@ -912,7 +913,7 @@ article_body:
         type: text
         text: ' learn anything, maybe this article will help to demystify the codebase for you. 😆'
 updated_by: 1
-updated_at: 1584814627
+updated_at: 1585544846
 article_photo: puke.png
 id: c701f323-2042-4d89-991f-2f653834920d
 ---
