@@ -14,7 +14,11 @@
                 {{ text }}
             {{ elseif type == "php_code" }}
                 <div class="my-4">
-                    <pre class="rounded bg-gray-100 my-4 p-4 overflow-scroll shadow-inner"><code>{{ code|noparse }}</code></pre>
+                    <pre class="language-php rounded bg-gray-100 my-4 p-4 overflow-scroll shadow-inner"><code>{{ php_code | noparse }}</code></pre>
+                </div>
+            {{ elseif type == "javascript_code" }}
+                <div class="my-4">
+                    <pre class="language-javascript rounded bg-gray-100 my-4 p-4 overflow-scroll shadow-inner"><code>{{ javascript_code }}</code></pre>
                 </div>
             {{ elseif type == "quote" }}
                 <blockquote class="bg-white my-4 shadow rounded-r-lg border-l-8 border-blue-500 p-8 font-light font-mono" cite="{{ cite }}">
