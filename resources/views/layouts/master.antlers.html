@@ -1,56 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="https://use.typekit.net/byv7nlp.css" />
 
-    <link rel="stylesheet" href="https://use.typekit.net/byv7nlp.css">
+		<link rel="stylesheet" href="/css/app.css" />
+		<link rel="stylesheet" href="/css/prism.css" />
 
-    <link rel="stylesheet" href="/css/app.css">
-    <link rel="stylesheet" href="/css/prism.css">
+		<title>{{ title }}</title>
+	</head>
 
-    <title>{{ title }}</title>
-</head>
+	<body class="bg-tan">
+		<div id="app" class="flex flex-col min-h-screen">
+			<header class="flex justify-center mt-10">
+				<div>
+					<h1 class="text-gray-900 fancy-font text-4xl md:text-5xl lg:text-6xl tilty">Luigi Battaglioli</h1>
 
-<body class="bg-tan">
+					<div class="mx-auto tilty mt-6 flex justify-center">
+						<a href="/" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Home</a>
+						<a href="/periodicals" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Blog</a>
+						<a href="/contact" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Contact</a>
+					</div>
+				</div>
+			</header>
 
-<div id="app" class="flex flex-col min-h-screen">
+			<main class="flex-grow px-6 overflow-hidden">
+				{{ template_content }}
+			</main>
 
-    <header class="flex justify-center mt-10">
-        <div>
-            <h1 class="text-gray-900 fancy-font text-4xl md:text-5xl lg:text-6xl tilty">Luigi Battaglioli</h1>
+			<footer class="w-full bg-gray-800 font-serif text-white flex justify-between mt-4">
+				<div class="my-auto px-8">
+					<a class="text-4xl hover:text-blue-500" href="https://weirdwidewebring.net/prev.html?ref=theluigi.com">👈🏻 <span class="text-sm font-tandy hidden md:block">dat way</span></a>
+				</div>
+				<div class="text-white my-auto py-8">
+					<h1 class="text-center text-lg">I'm a proud member of the</h1>
+					<a href="https://weirdwidewebring.net" class="block hover:text-blue-500 text-center font-tandy text-2xl md:text-3xl my-4">Weird Wide Webring</a>
 
-            <div class="mx-auto tilty mt-6 flex justify-center">
-                <a href="/" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Home</a>
-                <a href="/periodicals" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Blog</a>
-                <a href="/contact" class="text-gray-700 hover:underline mx-4 font-serif text-lg md:text-xl lg:text-4xl">Contact</a>
-            </div>
+					<div class="flex mt-4">
+						<a href="https://weirdwidewebring.net/join.html" class="mx-auto hover:text-blue-500 font-tandy">Join</a>
+						<a href="https://weirdwidewebring.net/random.html" class="mx-auto hover:text-blue-500 font-tandy">Random</a>
+					</div>
+				</div>
+				<div class="my-auto px-8">
+					<a class="text-4xl hover:text-blue-500" href="https://weirdwidewebring.net/next.html?ref=theluigi.com"><span class="text-sm font-tandy hidden md:block">dis way </span>👉🏻</a>
+				</div>
+			</footer>
+		</div>
+	</body>
 
-        </div>
-    </header>
+	<!-- Fathom - beautiful, simple website analytics -->
+	<script src="https://cdn.usefathom.com/script.js" site="ODTYNUUZ" defer></script>
+	<!-- / Fathom -->
 
-    <main class="flex-grow px-6 overflow-hidden">
-        {{ template_content }}
-    </main>
-
-    <footer class="w-full bg-gray-800 font-serif text-white flex justify-center mt-4">
-        <div class="text-white my-auto p-8">
-            <h1 class="text-center">proudly powered by</h1>
-            <img class="h-20" src="/images/statamic.svg">
-        </div>
-    </footer>
-
-</div>
-
-</body>
-
-<!-- Fathom - beautiful, simple website analytics -->
-<script src="https://cdn.usefathom.com/script.js" site="ODTYNUUZ" defer></script>
-<!-- / Fathom -->
-
-<script src="/js/prism.js"></script>
-
+	<script src="/js/prism.js"></script>
 </html>

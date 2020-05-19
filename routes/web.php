@@ -28,3 +28,10 @@ Route::get('/contact', function () {
         ->template('contact')
         ->with(['title' => 'Wanna chat!?']);
 });
+
+Route::get('/www', function () {
+    return (new Statamic\View\View)
+        ->layout('layouts.master')
+        ->template('www')
+        ->with(['title' => 'Weird Wide Webring']);
+});
