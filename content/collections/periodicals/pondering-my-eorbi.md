@@ -1,6 +1,6 @@
 ---
 title: 'Pondering my Eorbi'
-publish_date: '2022-01-19'
+publish_date: '2022-01-19 18:42'
 summary: 'Don''t mind me while I ponder my Eorbi...'
 article_photo: pondering-my-eorbi.jpg
 article_body:
@@ -309,6 +309,7 @@ article_body:
         type: text
         text: 'Sign up today, and you''ll be among the first to test out some of the new features we''re working on! We''d love it if you did.'
 updated_by: 1
-updated_at: 1642617769
+updated_at: 1642617797
+author: 1
 id: 8a5a9621-8ff9-4e90-a07d-bf9e23604f4e
 ---
