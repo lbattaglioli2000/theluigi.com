@@ -105,8 +105,6 @@ article_body:
         type: text
         marks:
           -
-            type: bold
-          -
             type: link
             attrs:
               href: 'https://eorbi.com/dashboard'
@@ -287,13 +285,7 @@ article_body:
     content:
       -
         type: text
-        marks:
-          -
-            type: bold
-        text: 'Oh my gosh speed'
-      -
-        type: text
-        text: '. All of our front-end assets, and any uploaded user media, is all stored on S3, and distributed through CloudFront; and it’s blazing fast. A little too fast some might think 🚔'
+        text: 'Oh my gosh speed. All of our front-end assets, and any uploaded user media, is all stored on S3, and distributed through CloudFront; and it’s blazing fast. A little too fast some might think 🚔'
   -
     type: heading
     attrs:
@@ -309,7 +301,7 @@ article_body:
         type: text
         text: 'Sign up today, and you''ll be among the first to test out some of the new features we''re working on! We''d love it if you did.'
 updated_by: 1
-updated_at: 1642617797
+updated_at: 1642617884
 author: 1
 id: 8a5a9621-8ff9-4e90-a07d-bf9e23604f4e
 ---
