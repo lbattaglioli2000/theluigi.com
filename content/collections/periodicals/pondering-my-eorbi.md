@@ -299,9 +299,19 @@ article_body:
     content:
       -
         type: text
-        text: 'Sign up today, and you''ll be among the first to test out some of the new features we''re working on! We''d love it if you did.'
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://eorbi.com/register'
+              target: _blank
+              rel: null
+        text: 'Sign up today'
+      -
+        type: text
+        text: ', and you''ll be among the first to test out some of the new features we''re working on! We''d love it if you did.'
 updated_by: 1
-updated_at: 1642617884
+updated_at: 1642617938
 author: 1
 id: 8a5a9621-8ff9-4e90-a07d-bf9e23604f4e
 ---
