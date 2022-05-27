@@ -79,8 +79,8 @@ article_body:
         type: text
         text: 'My previous site was built on Statamic v2. This here sparkly, new site is a Laravel application with the Statamic v3 CMS package installed. Granted it''s still in beta and will probably break, it''s a powerful system and I''m willing to chance it. Statamic really makes content creation and management a cinch, and will enable me to focus on creating more content, so stay tuned for more goodies.'
 updated_by: 1
-updated_at: 1584689113
-publish_date: '2020-03-20'
+updated_at: 1653663258
+publish_date: '2020-03-20 14:53'
 article_photo: mac-hello.jpeg
 id: 5faa9b13-e2de-41d7-ab3e-0c2a00fb6a72
 published: false
