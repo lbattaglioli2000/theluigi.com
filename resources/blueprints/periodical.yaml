@@ -13,6 +13,27 @@ sections:
           listable: true
           display: Title
       -
+        handle: summary
+        field:
+          type: textarea
+          localizable: false
+          width: 50
+          listable: true
+          display: Summary
+      -
+        handle: article_photo
+        field:
+          mode: grid
+          restrict: false
+          allow_uploads: true
+          max_files: 1
+          type: assets
+          instructions: 'Give the article an eye catching photo.'
+          localizable: false
+          listable: true
+          display: 'Article Photo'
+          width: 50
+      -
         handle: publish_date
         field:
           mode: single
@@ -38,27 +59,6 @@ sections:
           width: 50
           listable: hidden
           display: Author
-      -
-        handle: summary
-        field:
-          type: textarea
-          localizable: false
-          width: 50
-          listable: true
-          display: Summary
-      -
-        handle: article_photo
-        field:
-          mode: grid
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          type: assets
-          instructions: 'Give the article an eye catching photo.'
-          localizable: false
-          listable: true
-          display: 'Article Photo'
-          width: 50
       -
         handle: article_body
         field:
@@ -93,22 +93,6 @@ sections:
           listable: true
           display: Content
           sets:
-            playlist:
-              display: Playlist
-              fields:
-                -
-                  handle: playlist_embed_code
-                  field:
-                    restrict: false
-                    automatic_line_breaks: true
-                    automatic_links: false
-                    escape_markup: false
-                    smartypants: false
-                    type: markdown
-                    instructions: 'Add your playlist iFrame embed code.'
-                    localizable: false
-                    listable: true
-                    display: 'Playlist Embed Code'
             quote:
               display: Quote
               fields:
@@ -237,3 +221,21 @@ sections:
                     localizable: false
                     listable: hidden
                     display: 'Alert Message'
+            iframe_embed:
+              display: 'iFrame Embed'
+              fields:
+                -
+                  handle: code
+                  field:
+                    theme: material
+                    mode: htmlmixed
+                    indent_type: tabs
+                    indent_size: 4
+                    line_numbers: true
+                    line_wrapping: true
+                    key_map: default
+                    type: code
+                    instructions: 'Paste your iFrame embed code here.'
+                    localizable: false
+                    listable: hidden
+                    display: Code
