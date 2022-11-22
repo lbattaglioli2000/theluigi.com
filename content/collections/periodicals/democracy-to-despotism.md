@@ -10,6 +10,7 @@ article_body:
         type: text
         text: 'In 1946 political scientist Harold Lasswell, in collaboration with The Encyclopædia Britannica, produced a film exploring how democratic societies, have fallen into despotism.'
 updated_by: 1
-updated_at: 1669157120
+updated_at: 1669157162
+article_photo: maxresdefault.jpeg
 id: 9f43f723-c499-44fc-b75b-5301a7da7313
 ---
